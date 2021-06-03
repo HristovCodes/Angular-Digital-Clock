@@ -1,0 +1,64 @@
+.display {
+  display: inline-grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 1fr 8fr 1fr 8fr 1fr;
+  grid-template-areas:
+    ". A ."
+    "F . B"
+    ". G ."
+    "E . C"
+    ". D .";
+
+  height: 300px;
+  width: 150px;
+  margin: 15px;
+}
+
+.a .A {
+  background-color: #000;
+}
+.b .B {
+  background-color: #000;
+}
+.c .C {
+  background-color: #000;
+}
+.d .D {
+  background-color: #000;
+}
+.e .E {
+  background-color: #000;
+}
+.f .F {
+  background-color: #000;
+}
+.g .G {
+  background-color: #000;
+}
+
+.A {
+  grid-area: A;
+}
+.B {
+  grid-area: B;
+}
+.C {
+  grid-area: C;
+}
+.D {
+  grid-area: D;
+}
+.E {
+  grid-area: E;
+}
+.F {
+  grid-area: F;
+}
+.G {
+  grid-area: G;
+}
+
+.segment {
+  background-color: #fff;
+  border-radius: 5px;
+}
