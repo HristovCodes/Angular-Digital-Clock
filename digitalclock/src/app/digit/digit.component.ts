@@ -30,5 +30,4 @@ export class DigitComponent implements OnInit {
       7	    on	on	on				
       8	    on	on	on	on	on	on	on
       9	    on	on	on	on		  on	on
-      setinterval
 */
