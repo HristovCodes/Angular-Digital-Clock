@@ -11,4 +11,5 @@ export const DigitTemplates: Digit[] = [
   { id: 7, classes: 'a b c' },
   { id: 8, classes: 'a b c d e f g' },
   { id: 9, classes: 'a b c d f g' },
+  { id: -1, classes: '' },
 ];
