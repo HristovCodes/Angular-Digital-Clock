@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import { Digit } from './digit';
 import { DigitTemplates } from './digittemplates';
 
@@ -7,13 +7,17 @@ import { DigitTemplates } from './digittemplates';
   templateUrl: './digit.component.html',
   styleUrls: ['./digit.component.scss'],
 })
-export class DigitComponent implements OnInit {
+export class DigitComponent implements OnInit, OnChanges {
   @Input() n!: number;
-  digit: Digit = DigitTemplates[this.n];
+  digit!: Digit;
 
   constructor() {}
 
   ngOnInit(): void {
+    this.digit = DigitTemplates[this.n];
+  }
+
+  ngOnChanges(): void {
     this.digit = DigitTemplates[this.n];
   }
 }
