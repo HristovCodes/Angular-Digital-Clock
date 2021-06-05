@@ -105,6 +105,37 @@
           }
         }
       }
+    },
+    "hristov-digital-clock": {
+      "projectType": "library",
+      "root": "projects/hristov-digital-clock",
+      "sourceRoot": "projects/hristov-digital-clock/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/hristov-digital-clock/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/hristov-digital-clock/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/hristov-digital-clock/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/hristov-digital-clock/src/test.ts",
+            "tsConfig": "projects/hristov-digital-clock/tsconfig.spec.json",
+            "karmaConfig": "projects/hristov-digital-clock/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "digitalclock"

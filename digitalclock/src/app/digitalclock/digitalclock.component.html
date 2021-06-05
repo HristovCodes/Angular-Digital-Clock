@@ -1,7 +1,16 @@
-<app-digit [n]="hours0"></app-digit>
-<app-digit [n]="hours1"></app-digit>
-<app-digit [n]="minutes0"></app-digit>
-<app-digit [n]="minutes1"></app-digit>
-<app-digit [n]="secs0"></app-digit>
-<app-digit [n]="secs1"></app-digit>
-{{ ampm }}
+<p>
+  This clock has a height of <span>50px</span> and width of <span>300px</span>.
+</p>
+<p>Format: <span>hh:mm:ss:f</span></p>
+<div class="test1">
+  <lib-hristov-digital-clock
+    [format]="'hh:mm:ss:f'"
+  ></lib-hristov-digital-clock>
+</div>
+<p>
+  This clock has a height of <span>200px</span> and width of <span>750px</span>.
+</p>
+<p>Format: <span>h:m:s:t</span></p>
+<div class="test2">
+  <lib-hristov-digital-clock [format]="'h:m:s:t'"></lib-hristov-digital-clock>
+</div>

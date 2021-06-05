@@ -7,6 +7,12 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitReturns": true,
+    "paths": {
+      "hristov-digital-clock": [
+        "dist/hristov-digital-clock/hristov-digital-clock",
+        "dist/hristov-digital-clock"
+      ]
+    },
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
