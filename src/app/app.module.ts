@@ -2,14 +2,13 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 
-import { DigitComponent } from '../digit/digit.component';
-import { DigitalclockComponent } from './digitalclock.component';
+import { App } from './app.component';
 import { HristovDigitalClockModule } from 'hristov-digital-clock';
 
 @NgModule({
-  declarations: [DigitComponent, DigitalclockComponent],
+  declarations: [App],
   imports: [CommonModule, BrowserModule, HristovDigitalClockModule],
-  exports: [DigitComponent],
-  bootstrap: [DigitalclockComponent],
+  exports: [],
+  bootstrap: [App],
 })
-export class DigitalclockModule {}
+export class AppModule {}
