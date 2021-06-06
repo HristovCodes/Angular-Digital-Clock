@@ -28,7 +28,7 @@ export class HristovDigitalClockComponent implements OnInit, OnDestroy {
 
     this.ampm = 'noshow';
     if (this.hourformat === 'h' || this.hourformat === 'h') {
-      if (this.ampmbool) this.ampm = hours >= 12 ? 'pm' : 'am';
+      if (this.ampmbool) this.ampm = hours >= 12 ? 'PM' : 'AM';
       hours = hours === 0 ? 12 : hours % 12;
     }
 
@@ -37,7 +37,6 @@ export class HristovDigitalClockComponent implements OnInit, OnDestroy {
     this.hours1 = hours % 10;
     if (this.hourformat === 'h' || this.hourformat === 'H') {
       this.hours0 = hours >= 10 ? Math.floor(hours / 10) : 10;
-      this.hours1 = hours % 10;
     }
 
     this.minutes0 = minutes >= 10 ? Math.floor(minutes / 10) : 0;
