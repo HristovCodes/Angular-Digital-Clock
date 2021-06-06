@@ -1,4 +1,4 @@
-# HristovDigitalClock
+# Hristov Digital Clock
 
 ## Usage
 
