@@ -1,13 +1,10 @@
 .display {
-  display: inline-grid;
+  display: grid;
   grid-template-columns: 1fr 8fr 1fr;
   grid-template-rows: 1fr 8fr 1fr 8fr 1fr;
-  grid-template-areas:
-    ". A ."
-    "F . B"
-    ". G ."
-    "E . C"
-    ". D .";
+  grid-template-areas: ". A ." "F . B" ". G ." "E . C" ". D .";
+  height: 100%;
+  width: 100%;
 }
 
 .a .A,
@@ -45,4 +42,9 @@
 .segment {
   background-color: #fff;
   border-radius: 5px;
+}
+
+:host {
+  height: 100%;
+  width: 10%;
 }
