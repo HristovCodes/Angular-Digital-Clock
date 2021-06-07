@@ -41,7 +41,7 @@ export class HristovDigitalClockComponent implements OnInit, OnDestroy {
 
     this.minutes0 = minutes >= 10 ? Math.floor(minutes / 10) : 0;
     this.minutes1 = minutes % 10;
-    if (this.hourformat === 'm') {
+    if (this.minuteformat === 'm') {
       this.minutes0 = minutes >= 10 ? Math.floor(minutes / 10) : 10;
     }
 
