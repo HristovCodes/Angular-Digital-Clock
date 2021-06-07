@@ -27,7 +27,7 @@ export class HristovDigitalClockComponent implements OnInit, OnDestroy {
     let secs = new Date().getSeconds();
 
     this.ampm = 'noshow';
-    if (this.hourformat === 'h' || this.hourformat === 'h') {
+    if (this.hourformat === 'h' || this.hourformat === 'hh') {
       if (this.ampmbool) this.ampm = hours >= 12 ? 'PM' : 'AM';
       hours = hours === 0 ? 12 : hours % 12;
     }
